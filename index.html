@@ -13,9 +13,9 @@
             document.getElementById('result').value = calculate(e1, e2, op, decimalPoint).getValue();
         }
         function calculate(e1, e2, op, decimalPoint){
-            // if(isNaN(e1) || isNaN(e2)){
-                // return alert("数字をいれてください")
-            // }
+            if(isNaN(e1) || isNaN(e2)){
+                return alert("数字をいれてください")
+            }
             if(isNaN(e1)){
                 return alert("数字をいれてください")
             }
